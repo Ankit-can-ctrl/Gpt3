@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import { Brand, Cta, Navbar } from "./components";
 import {
   Feature,
@@ -6,12 +7,25 @@ import {
   Header,
   Possibility,
   Blog,
-  whatgpt3,
+  WhatGpt3,
 } from "./container";
+
 export default function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <div className="gradient__bg">
+        <Navbar />
+        <Header />
+      </div>
+      <div>
+        <Brand />
+        <WhatGpt3 />
+        <Feature />
+        <Possibility />
+        <Cta />
+        <Blog />
+        <Footer />
+      </div>
     </div>
   );
 }

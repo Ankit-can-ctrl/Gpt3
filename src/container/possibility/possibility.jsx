@@ -1,10 +1,10 @@
 import React from "react";
-import "./possiblilty.css";
+import "./possibility.css";
 
 export default function Possibility() {
   return (
     <div className="Possibility">
-      <h1>hello</h1>
+      <h1>Possibility</h1>
     </div>
   );
 }

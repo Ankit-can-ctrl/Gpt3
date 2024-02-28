@@ -1,0 +1,66 @@
+.gpt3_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.gpt3_navbar_links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.navbar_logo {
+  margin-right: 2rem;
+}
+.navbar_logo img {
+  width: 62.56px;
+  height: 16.02px;
+  vertical-align: middle;
+}
+.navbar_links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 18px;
+  /* line-height: 25px; */
+  text-transform: capitalize;
+  width: 70%;
+  padding: 0 3rem;
+}
+.navbar_btns {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  column-gap: 2rem;
+  justify-content: center;
+  margin: 0 2rem;
+}
+.navbar_signin_btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 15px;
+  font-family: var(--font-family);
+  width: 80px;
+  cursor: pointer;
+}
+.navbar_signup_btn {
+  border: none;
+  border-radius: 3px;
+  font-weight: 800;
+  font-size: 15px;
+  font-family: var(--font-family);
+  background-color: rgb(238, 89, 20);
+  color: #fff;
+  height: 40px;
+  cursor: pointer;
+  width: 80px;
+}

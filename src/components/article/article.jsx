@@ -4,7 +4,7 @@ import "./article.css";
 export default function Article() {
   return (
     <div className="Article">
-      <h1>hello</h1>
+      <h1>Article</h1>
     </div>
   );
 }
