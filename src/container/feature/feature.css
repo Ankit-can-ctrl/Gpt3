@@ -1,0 +1,41 @@
+.top_feature {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  column-gap: 2rem;
+}
+.bottom_feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 1rem;
+  gap: 2rem;
+}
+
+.features_head h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.04rem;
+  color: #fff;
+  margin-top: 1rem;
+  flex: 1;
+}
+.features_desc {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #81afdd;
+  text-align: center;
+}
+.features_head div {
+  width: 38px;
+  height: 3px;
+  background: var(--gradient-bar);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.25rem;
+}
