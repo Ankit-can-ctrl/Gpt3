@@ -3,33 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .header_container {
-  margin-top: 2rem;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: center;
+  gap: 3rem;
 }
 .top_text {
   display: flex;
   flex-direction: column;
-  flex: 1;
   justify-content: center;
   align-items: center;
   margin: 2rem;
+  text-align: center;
 }
 .top_text h1 {
   font-family: var(--font-family);
   font-weight: 800;
   font-size: 62px;
-  line-height: 75px;
+  /* line-height: 75px; */
   letter-spacing: -0.04rem;
 }
 .top_text p {
   font-family: var(--font-family);
   font-size: 20px;
-  line-height: 27px;
+  /* line-height: 27px; */
   color: var(--color-text);
   margin-top: 1.5rem;
 }
@@ -38,7 +40,6 @@
   align-items: center;
   justify-content: center;
   width: 80%;
-  margin-top: 3rem;
 }
 .input_part input {
   flex: 2;
@@ -52,6 +53,10 @@
   outline: none;
   color: #fff;
   border-radius: 5px 0 0 5px;
+  text-indent: 2rem;
+}
+.input_email::placeholder {
+  padding: 0;
 }
 
 .input_part button {
@@ -88,4 +93,67 @@
   font-weight: 500;
 }
 .ai_img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.ai_img img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 680px) {
+  .input_part input {
+    font-size: 15px;
+    text-indent: 1rem;
+  }
+  .input_email::placeholder {
+    padding: 0;
+  }
+  .input_part button {
+    font-size: 15px;
+  }
+  .people_part {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 360px) {
+  .top_text h1 {
+    font-size: 50px;
+  }
+  .top_text p {
+    font-size: 16px;
+  }
+  .input_part button {
+    font-size: 14px;
+  }
+
+  .input_part input {
+    font-size: 14px;
+    text-indent: 0.3rem;
+  }
+  .input_email::placeholder {
+    padding: 0;
+  }
+  .people_part p {
+    font-size: 13px;
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header_two_parts {
+    display: flex;
+  }
+  .header_container {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 290px) {
+  .top_text h1 {
+    font-size: 40px;
+  }
+  .top_text p {
+    font-size: 13px;
+  }
 }

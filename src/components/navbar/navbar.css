@@ -67,7 +67,7 @@
   position: absolute;
   /* top: 40px; */
   right: 3rem;
-
+  min-height: auto;
   margin-top: 1rem;
   padding: 2rem;
   min-width: 210px;
@@ -98,5 +98,8 @@
   }
   .up_in_btn {
     display: block;
+  }
+  .nav_ontoggle {
+    right: 1rem;
   }
 }
