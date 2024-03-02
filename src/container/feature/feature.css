@@ -1,19 +1,13 @@
 .top_feature {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  align-items: center;
-  column-gap: 2rem;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
 }
 .bottom_feature {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+
   flex-direction: column;
-  width: 30%;
-  margin: 0 1rem;
-  gap: 2rem;
 }
 
 .features_head h1 {
@@ -30,7 +24,7 @@
   font-weight: 500;
   font-size: 16px;
   color: #81afdd;
-  text-align: center;
+  text-align: justify;
 }
 .features_head div {
   width: 38px;
@@ -38,4 +32,25 @@
   background: var(--gradient-bar);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 0.25rem;
+}
+
+@media screen and (min-width: 750px) {
+  .top_feature {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30%;
+  }
+  .features_head {
+    width: 60%;
+  }
+  /* .bottom_feature {
+    width: 30%;
+  } */
+}
+
+@media screen and (min-width: 850px) {
+  .bottom_feature {
+    width: 30%;
+  }
 }

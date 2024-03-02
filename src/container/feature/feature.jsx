@@ -1,9 +1,9 @@
 import React from "react";
 import "./feature.css";
 
-export default function Feature({ text, title, style }) {
+export default function Feature({ text, title, feature_type }) {
   return (
-    <div className={style}>
+    <div className={feature_type}>
       <div className="features_head">
         <div />
         <h1>{title}</h1>
