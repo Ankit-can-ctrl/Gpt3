@@ -1,7 +1,7 @@
 .what_gpt_container {
   display: flex;
   flex-direction: column;
-
+  margin-top: 3rem;
   padding: 2rem;
   background: var(--color-footer);
 
@@ -82,7 +82,7 @@
 
 @media screen and (min-width: 490px) {
   .what_gpt_container {
-    margin: 0 2rem;
+    margin: 2 2rem;
   }
 }
 @media screen and (min-width: 850px) {
