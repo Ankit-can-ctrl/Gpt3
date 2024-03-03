@@ -1,0 +1,49 @@
+.possibility_main_container {
+  margin: 3rem 0.6rem;
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.poss_img img {
+  width: 100%;
+  height: 100%;
+}
+.poss_description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+.poss_description h1 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+.poss_description h4 {
+  color: var(--color-subtext);
+  font-weight: 800;
+}
+.poss_description p {
+  color: var(--color-text);
+  font-weight: 600;
+}
+@media screen and (min-width: 400px) {
+  .possibility_main_container {
+    margin: 3rem;
+  }
+  .poss_description {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .possibility_main_container {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+  }
+  .poss_description h1 {
+    font-weight: 800;
+    font-size: 3rem;
+  }
+}

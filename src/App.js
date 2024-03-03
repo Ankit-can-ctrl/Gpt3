@@ -2,12 +2,12 @@ import React from "react";
 import "./App.css";
 import { Brand, Cta, Navbar } from "./components";
 import {
-  Feature,
-  Footer,
   Header,
   Possibility,
   Blog,
   WhatGpt3,
+  Footer,
+  Description,
 } from "./container";
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
       <div>
         <Brand />
         <WhatGpt3 />
-        <Feature />
+        <Description />
         <Possibility />
         <Cta />
         <Blog />

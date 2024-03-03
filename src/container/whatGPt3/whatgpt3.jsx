@@ -4,7 +4,7 @@ import Feature from "../feature/feature";
 
 export default function WhatGpt3() {
   return (
-    <div className="what_gpt_container">
+    <div className="what_gpt_container" id="wgpt3">
       <div className="sec_container">
         <div className="top_feature">
           <Feature

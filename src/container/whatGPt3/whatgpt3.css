@@ -95,10 +95,19 @@
     align-items: center;
     justify-content: space-between;
   }
+  .mid_feature h1 {
+    font-size: 2.5rem;
+  }
+  .mid_feature p {
+    font-weight: 800;
+  }
   .last_feature {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+  }
+  .sec_container {
+    margin: 0 3rem;
   }
 }

@@ -3,34 +3,13 @@ import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.svg";
 const navbarLinks = [
-  "Home",
-  "What is gpt?",
-  "Open AI",
-  "Case Studies",
-  "Library",
+  { name: "Home", id: "#home" },
+  { name: "What is gpt?", id: "#wgpt3" },
+  { name: "Open AI", id: "#oai" },
+  { name: "Case Studies", id: "#casestudies" },
+  { name: "Library", id: "#library" },
 ];
 
-function Menu() {
-  return (
-    <div className="navbar_links">
-      <li>
-        <a href="#home">Home</a>
-      </li>
-      <li>
-        <a href="#wgpt3">What is GPT?</a>
-      </li>
-      <li>
-        <a href="#possibility">Open AI</a>
-      </li>
-      <li>
-        <a href="#features">Case Studies</a>
-      </li>
-      <li>
-        <a href="#blog">Library</a>
-      </li>
-    </div>
-  );
-}
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -42,8 +21,8 @@ export default function Navbar() {
         </div>
         <div className="nav_links">
           {navbarLinks.map((item, index) => (
-            <a href={item} key={item}>
-              {item}
+            <a href={item.id} key={item.id}>
+              {item.name}
             </a>
           ))}
         </div>
@@ -92,8 +71,8 @@ export default function Navbar() {
             {toggleMenu && (
               <div className="nav_ontoggle">
                 {navbarLinks.map((item, index) => (
-                  <a href={item} key={item}>
-                    {item}
+                  <a href={item.id} key={item.id}>
+                    {item.name}
                   </a>
                 ))}
                 <button className="nav_in_btn up_in_btn">Sign In</button>

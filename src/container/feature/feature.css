@@ -24,7 +24,8 @@
   font-weight: 500;
   font-size: 16px;
   color: #81afdd;
-  text-align: justify;
+  text-align: left;
+  margin: 0.7rem 0;
 }
 .features_head div {
   width: 38px;
@@ -52,5 +53,6 @@
 @media screen and (min-width: 850px) {
   .bottom_feature {
     width: 30%;
+    gap: 2rem;
   }
 }
