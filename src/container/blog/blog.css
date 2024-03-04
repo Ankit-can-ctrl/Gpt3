@@ -1,0 +1,33 @@
+.blog_main_container {
+  font-family: var(--font-family);
+  margin: 3rem 1rem;
+  font-weight: 800;
+  font-size: 17px;
+}
+.blog_heading {
+  margin: 0 2rem;
+  text-align: center;
+}
+.blog_heading h1 {
+  font-weight: 800;
+  font-size: 40px;
+}
+@media screen and (min-width: 1100px) {
+  .blog_main_container {
+    margin: 3rem;
+  }
+  .blog_articles {
+    display: flex;
+    height: 100%;
+  }
+  .blog_main_article {
+    flex: 0.75rem;
+    margin-right: 2rem;
+  }
+  .blog_sec_article {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
