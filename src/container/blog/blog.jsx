@@ -5,7 +5,7 @@ import { blog01, blog02, blog03, blog04, blog05 } from "./import";
 
 export default function Blog() {
   return (
-    <div className="blog_main_container">
+    <div className="blog_main_container" id="library">
       <div className="blog_heading">
         <h1 className="gradient__text">
           A lot is happening, <br /> We are blogging about it.
